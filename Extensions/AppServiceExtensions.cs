@@ -18,6 +18,7 @@ public static class AppServiceExtensions
         services.AddScoped<TokenService>();
         services.AddScoped<AuthService>();
         services.AddScoped<UserService>();
+        services.AddScoped<QuestionService>();
         services.AddScoped<FavoriteService>();
 
         return services;

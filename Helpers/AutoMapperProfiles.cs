@@ -1,5 +1,6 @@
 using AutoMapper;
 using iTestApi.DTOs.Package;
+using iTestApi.DTOs.Question;
 using iTestApi.DTOs.User;
 using iTestApi.Entities;
 
@@ -17,7 +18,17 @@ namespace iTestApi.Helpers
             CreateMap<UserUpdateDto, User>();
             CreateMap<UserCreateDto, User>();
 
-            // CreateMap<Package, PackageDto>();
+            CreateMap<Question, QuestionDto>();
+            CreateMap<QuestionDto, Question>();
+            CreateMap<QuestionCreateDto, Question>();
+            CreateMap<QuestionUpdateDto, Question>();
+            
+            CreateMap<Answer, AnswerDto>();
+            CreateMap<AnswerDto, Answer>();
+            
+            
+            
+            
             // CreateMap<PackageDto, Package>();
             // CreateMap<PackageUpdateDto, Package>();
             // CreateMap<PackageCreateDto, Package>();
